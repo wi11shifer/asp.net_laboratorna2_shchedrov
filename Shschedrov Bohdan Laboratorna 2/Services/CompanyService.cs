@@ -43,7 +43,7 @@ namespace Shschedrov_Bohdan_Laboratorna_2.Services
             }
             companies.AddRange(xmlCompanies);
 
-            // 3. INI
+            // INI
             var parser = new FileIniDataParser();
             var data = parser.ReadFile("Config/companies.ini");
             foreach (var section in data.Sections)
